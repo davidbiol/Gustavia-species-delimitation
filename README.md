@@ -1,9 +1,9 @@
-# Gustavia-species-delimitation
+# Species delimitation in <i>Gustavia</i> (Lecythidaceae): an integrative taxonomic approach
 
-[![Journal](https://img.shields.io/badge/Journal-Plant%20Ecology%20and%20Evolution-orange)](https://plecevo.eu/)
-[![Status](https://img.shields.io/badge/Status-In-Review-#2b592c)]()
+[![Journal](https://img.shields.io/badge/Journal-American%20Journal%20of%20Botany-2b592c)](https://bsapubs.onlinelibrary.wiley.com/journal/15372197)
+[![Status](https://img.shields.io/badge/Status-In%20Review-orange)]()
 
-Supplementary data for: Ángel-Valledjo, MC, Mora-López, JD, Gutiérrez-Duque D, Jara-Muñoz, OA, Medellín-Zabala D (in review) Species delimitation in <i>Gustavia</i> (Lecythidaceae): an integrative taxonomic approach. American Journal of Botany.
+Supplementary data for: Ángel-Valledjo, MC, Mora-López, JD, Gutiérrez-Duque D, Jara-Muñoz, OA, Medellín-Zabala D (in review). Species delimitation in <i>Gustavia</i> (Lecythidaceae): an integrative taxonomic approach. American Journal of Botany.
 
 ---
 ## Morphometric analysis
