@@ -30,7 +30,7 @@ start
 start
 
 ## Phylogenetic tree pruning
-We pruned the Maximum Likelihood phylogenetic tree inferred by [Medellín-Zabala et al. (2026)](https://doi.org/10.1111/jbi.70225) to visualize the subclade that ecompasses Gustavia fasciculata sp. nov. and its closely related taxa.
+We pruned the Maximum Likelihood phylogenetic tree inferred by [Medellín-Zabala et al. (2026)](https://doi.org/10.1111/jbi.70225) to visualize the subclade that ecompasses <i>Gustavia fasciculata</i> sp. nov. and its closely related taxa.
 ```
 library(ape)
 library(phytools)
