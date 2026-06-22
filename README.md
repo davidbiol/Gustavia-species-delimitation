@@ -100,10 +100,6 @@ ggplot(data, aes(x = Month, y = Records, fill = Phenology)) +
 ## Preliminary IUCN Red List assessment
 start
 
-## Occurrence in protected areas
-start
-
----
 
 ## References
 
