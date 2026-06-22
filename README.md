@@ -32,6 +32,26 @@ start
 
 ## Phenology
 The phenological data were obtained from all fertile examined specimens and categorized as flowering, fruiting, or both ([Phenology/data_phe.csv](Phenology/data_phe.csv)). Then it was graphed in R ([script](Phenology/phenology_script.R)). Results can be found in the folder [Phenology](Phenology).
+```
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+library(readxl)
+
+windowsFonts(Times=windowsFont("Times New Roman"))
+
+data <- read.table(file="data_phe.csv", header = TRUE, sep = ",")
+str(data)
+data$Month = factor(data$Month, levels= c("Jan", "Feb", "Mar", "Apr", "May",
+                                          "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"))
+data$Phenology = factor(data$Phenology, levels= c("Flower","Fruit"))
+
+ggplot(data, aes(x = Month, y = Records, fill = Phenology)) +
+  geom_bar(stat = "identity", position = "stack") +
+  coord_polar(start = 0) +
+  scale_fill_manual(values = c("#702963", "orange")) +
+  theme_minimal()+ theme(text=element_text(family="Times",size=14))
+```
 
 ## Preliminary IUCN Red List assessment
 start
@@ -46,5 +66,11 @@ start
 Cobos, M. E., Peterson, A. T., Barve, N., & Osorio-Olvera, L. (2019). kuenm: an R package for detailed development of ecological niche models using Maxent. PeerJ, 7, e6281. https://doi.org/10.7717/peerj.6281
 
 Dauby, G., & de Lima, R. A. F. (2024). ConR: Computation of Parameters Used in Preliminary Assessment of Species Conservation Status. R package (version 2.1.0).
+
+Maechler, M., Rousseeuw, P., Struyf, A., Hubert, M., & Hornik, K. (2023).  _cluster: Cluster Analysis Basics and Extensions_. R package version 2.1.6.
+
+Martinez, P. (2017). _pairwiseAdonis: Pairwise Multilevel Comparison using Adonis_. R package version 0.4.1, commit cb190f7668a0c82c0b0853927db239e7b9ec3e83, <https://github.com/pmartinezarbizu/pairwiseAdonis>.
+
+Oksanen J, Simpson G, Blanchet F, Kindt R, Legendre P, Minchin P, O'Hara R, Solymos P, Stevens M, Szoecs E, Wagner H, Barbour M, Bedward M, Bolker B, Borcard D, Borman T, Carvalho G, Chirico M, De Caceres M, Durand S, Evangelista H, FitzJohn R, Friendly M, Furneaux B, Hannigan G, Hill M, Lahti L, Martino C, McGlinn D, Ouellette M, Ribeiro Cunha E, Smith T, Stier A, Ter Braak C, & Weedon J. (2026). _vegan: Community Ecology Package_. R package version 2.7-3, <https://CRAN.R-project.org/package=vegan>.
 
 R Core Team (2024). R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
