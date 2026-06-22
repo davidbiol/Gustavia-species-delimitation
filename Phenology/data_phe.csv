@@ -1,0 +1,25 @@
+﻿Month n,Month,Phenology,Records
+1,Jan,Fruit,0
+1,Jan,Flower,0
+2,Feb,Fruit,1
+2,Feb,Flower,4
+3,Mar,Fruit,2
+3,Mar,Flower,6
+4,Apr,Fruit,1
+4,Apr,Flower,3
+5,May,Fruit,2
+5,May,Flower,2
+6,Jun,Fruit,2
+6,Jun,Flower,0
+7,Jul,Fruit,1
+7,Jul,Flower,2
+8,Aug,Fruit,0
+8,Aug,Flower,0
+9,Sep,Fruit,0
+9,Sep,Flower,1
+10,Oct,Fruit,0
+10,Oct,Flower,1
+11,Nov,Fruit,1
+11,Nov,Flower,4
+12,Dec,Fruit,0
+12,Dec,Flower,2
