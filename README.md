@@ -18,7 +18,7 @@ pairwise_results <- pairwise.adonis2(gower_dist ~ species, data = gustData, nper
 # View the results
 pairwise_results
 ```
-The [script](Morphometric%20analysis/morphometric_analysis.R) and the [results](Morphometric%20analysis/nmds_plot.png) can be found in the folder [Morphometric analysis](Morphometric%20analysis)
+Complete [script](Morphometric%20analysis/morphometric_analysis.R) and the [results](Morphometric%20analysis/nmds_plot.png) can be found in the folder [Morphometric analysis](Morphometric%20analysis)
 
 
 ## Climatic niche similarity analyses
