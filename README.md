@@ -6,6 +6,8 @@
 Supplementary data for: Ángel-Vallejo, MC, Mora-López, JD, Gutiérrez-Duque D, Jara-Muñoz, OA, Medellín-Zabala D (in review). Species delimitation in <i>Gustavia</i> (Lecythidaceae): an integrative taxonomic approach. American Journal of Botany.
 
 ---
+This repository has been created with the aim of reproducibility of the analyses done. Also, it provides the required tools for any study that aims to circumscribe species in Neotropical Lecythidaceae, particularly in the genus _Gustavia_.
+
 ## Morphometric analysis
 We revised and measured 51 herbarium specimens ([Morphometric analysis/gustavia_comp.csv](Morphometric%20analysis/gustavia_comp.csv)). Eight morphological characters of taxonomic importance were measured. In order to understand the intraspecific and interspecific morphometric variation, non-metric multidimensional scaling (NMDS) was performed using the ```metaMDS``` function of the R package vegan (Oksanen et al., 2026) within the R statistical environment (R Core Team, 2024). Prior to the NMDS analyses, all continuous characters were scaled to have unit variance, and a dissimilarity matrix was calculated using the Gower’s formula implemented in the ```daisy``` function of the R package cluster (Maechler et al., 2023).
 
