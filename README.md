@@ -7,7 +7,7 @@ Supplementary data for: Ángel-Vallejo, MC, Mora-López, JD, Gutiérrez-Duque D,
 
 ---
 ## Morphometric analysis
-We revised and measured 51 herbarium specimens ([Morphometric analysis/gustavia_comp.csv](Morphometric analysis/gustavia_comp.csv)). Eight morphological characters of taxonomic importance were measured. In order to understand the intraspecific and interspecific morphometric variation, non-metric multidimensional scaling (NMDS) was performed using the ```metaMDS``` function of the R package vegan (Oksanen et al., 2026) within the R statistical environment (R Core Team, 2024). Prior to the NMDS analyses, all continuous characters were scaled to have unit variance, and a dissimilarity matrix was calculated using the Gower’s formula implemented in the ```daisy``` function of the R package cluster (Maechler et al., 2023).
+We revised and measured 51 herbarium specimens ([Morphometric analysis/gustavia_comp.csv](Morphometric%20analysis/gustavia_comp.csv)). Eight morphological characters of taxonomic importance were measured. In order to understand the intraspecific and interspecific morphometric variation, non-metric multidimensional scaling (NMDS) was performed using the ```metaMDS``` function of the R package vegan (Oksanen et al., 2026) within the R statistical environment (R Core Team, 2024). Prior to the NMDS analyses, all continuous characters were scaled to have unit variance, and a dissimilarity matrix was calculated using the Gower’s formula implemented in the ```daisy``` function of the R package cluster (Maechler et al., 2023).
 
 Permutational multivariate analysis of variance (PERMANOVA) was performed to test for significant morphological differentiation among the predefined species groups using the ```adonis2``` function (vegan). Post-hoc pairwise comparisons between species pairs were calculated using the ```pairwise.adonis2``` function from the R package pairwiseAdonis (Martínez, 2017). 
 ```
@@ -18,7 +18,7 @@ pairwise_results <- pairwise.adonis2(gower_dist ~ species, data = gustData, nper
 # View the results
 pairwise_results
 ```
-The [script](Morphometric analysis/morphometric_analysis.R) and the [results](Morphometric analysis/nmds_plot.png) can be found in the folder [Morphometric analysis](Morphometric analysis)
+The [script](Morphometric%20analysis/morphometric_analysis.R) and the [results](Morphometric%20analysis/nmds_plot.png) can be found in the folder [Morphometric analysis](Morphometric%20analysis)
 
 
 ## Climatic niche similarity analyses
