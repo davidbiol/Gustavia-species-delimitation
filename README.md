@@ -7,7 +7,19 @@ Supplementary data for: Ángel-Vallejo, MC, Mora-López, JD, Gutiérrez-Duque D,
 
 ---
 ## Morphometric analysis
-start
+We revised and measured 51 herbarium specimens ([Morphometric analysis/gustavia_comp.csv](Morphometric analysis/gustavia_comp.csv)). Eight morphological characters of taxonomic importance were measured. In order to understand the intraspecific and interspecific morphometric variation, non-metric multidimensional scaling (NMDS) was performed using the ```metaMDS``` function of the R package vegan (Oksanen et al., 2026) within the R statistical environment (R Core Team, 2024). Prior to the NMDS analyses, all continuous characters were scaled to have unit variance, and a dissimilarity matrix was calculated using the Gower’s formula implemented in the ```daisy``` function of the R package cluster (Maechler et al., 2023).
+
+Permutational multivariate analysis of variance (PERMANOVA) was performed to test for significant morphological differentiation among the predefined species groups using the ```adonis2``` function (vegan). Post-hoc pairwise comparisons between species pairs were calculated using the ```pairwise.adonis2``` function from the R package pairwiseAdonis (Martínez, 2017). 
+```
+#devtools::install_github("pmartinezarbizu/pairwiseAdonis/pairwiseAdonis")
+library(pairwiseAdonis)
+# Run the pairwise comparison
+pairwise_results <- pairwise.adonis2(gower_dist ~ species, data = gustData, nperm = 10000)
+# View the results
+pairwise_results
+```
+The [script](Morphometric analysis/morphometric_analysis.R) and the [results](Morphometric analysis/nmds_plot.png) can be found in the folder [Morphometric analysis](Morphometric analysis)
+
 
 ## Climatic niche similarity analyses
 start
@@ -34,3 +46,5 @@ start
 Cobos, M. E., Peterson, A. T., Barve, N., & Osorio-Olvera, L. (2019). kuenm: an R package for detailed development of ecological niche models using Maxent. PeerJ, 7, e6281. https://doi.org/10.7717/peerj.6281
 
 Dauby, G., & de Lima, R. A. F. (2024). ConR: Computation of Parameters Used in Preliminary Assessment of Species Conservation Status. R package (version 2.1.0).
+
+R Core Team (2024). R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
