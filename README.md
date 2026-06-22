@@ -115,6 +115,8 @@ Maechler, M., Rousseeuw, P., Struyf, A., Hubert, M., & Hornik, K. (2023).  _clus
 
 Martinez, P. (2017). _pairwiseAdonis: Pairwise Multilevel Comparison using Adonis_. R package version 0.4.1, commit cb190f7668a0c82c0b0853927db239e7b9ec3e83, <https://github.com/pmartinezarbizu/pairwiseAdonis>.
 
+Medellín-Zabala, D., J. L. M. Charboneau, O. M. Vargas, S. A. Smith, D. J. P. Gonçalves, A. S. Chanderbali, D. E. Soltis, et al. 2026. Assembling the Neotropical Tree Flora: Andean Uplift and the Historical Biogeography of the Brazil Nut Family (Lecythidaceae). _Journal of Biogeography_ 53: e70225. https://doi.org/10.1111/jbi.70225
+
 Oksanen J, Simpson G, Blanchet F, Kindt R, Legendre P, Minchin P, O'Hara R, Solymos P, Stevens M, Szoecs E, Wagner H, Barbour M, Bedward M, Bolker B, Borcard D, Borman T, Carvalho G, Chirico M, De Caceres M, Durand S, Evangelista H, FitzJohn R, Friendly M, Furneaux B, Hannigan G, Hill M, Lahti L, Martino C, McGlinn D, Ouellette M, Ribeiro Cunha E, Smith T, Stier A, Ter Braak C, & Weedon J. (2026). _vegan: Community Ecology Package_. R package version 2.7-3, <https://CRAN.R-project.org/package=vegan>.
 
 R Core Team (2024). R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
