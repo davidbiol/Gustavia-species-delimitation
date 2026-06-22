@@ -29,8 +29,50 @@ start
 ## Ecological Niche Modeling (ENM)
 start
 
-## Phylogenetic cut
-start
+## Phylogenetic tree pruning
+We pruned the Maximum Likelihood phylogenetic tree inferred by [Medellín-Zabala et al. (2026)](https://doi.org/10.1111/jbi.70225) to visualize the subclade that ecompasses Gustavia fasciculata sp. nov. and its closely related taxa.
+```
+library(ape)
+library(phytools)
+library(phangorn)
+library(maps)
+
+# Loading the tree
+Lecy.tree <- read.tree(file="ufbt_Lecy_newtaxo.treefile")
+head(Lecy.tree)
+
+#extracting the Gustavia clade
+plotTree(Lecy.tree, ftype="i", fsize=0.4, lwd=1)
+nodelabels(Lecy.tree$node.label, frame = "none", cex = 0.6)
+nodelabels(frame = "circ", bg = "white", cex = 0.4) #to see the node labels
+Lecy.tree.gustavia <- extract.clade(Lecy.tree, node = 592)
+plotTree(Lecy.tree.gustavia)
+
+write.tree(Lecy.tree.gustavia, file = "Gustavia_ML.treefile")
+
+#extracting G. gentryi species complex
+Gustavia.tree <- read.tree(file="Gustavia_ML.treefile")
+Gustavia.tree #92 tips
+head(Gustavia.tree)
+
+plotTree(Gustavia.tree, ftype="i", fsize=0.4, lwd=1)
+nodelabels(Gustavia.tree$node.label, frame = "none", cex = 0.6)
+nodelabels(frame = "circ", bg = "white", cex = 0.4) #to see the node labels
+Lecy.tree.gentryi <- extract.clade(Gustavia.tree, node = 141)
+plotTree(Lecy.tree.gentryi)
+
+write.tree(Lecy.tree.gentryi, file = "G_gentryi_complex_ML.treefile")
+
+# Plotting the tree
+pdf(height = 5, width = 6, file = "Gentryi_complex.pdf")
+Gentryi.tree <- read.tree(file="G_gentryi_complex_ML.treefile")
+Gentryi.tree$root.edge <- 0.005
+plot.phylo(Gentryi.tree, root.edge = TRUE, ftype="i", cex=0.9, lwd=3, label.offset = 0.002, y.lim = c(-1, Ntip(Gentryi.tree)))
+nodelabels(Gentryi.tree$node.label, frame = "none", cex=0.7, adj = -0.3)
+add.scale.bar(cex = 0.6, lwd = 1, y=-0.3, x=0)
+
+dev.off()
+```
 
 ## Phenology
 The phenological data were obtained from all fertile examined specimens and categorized as flowering, fruiting, or both ([Phenology/data_phe.csv](Phenology/data_phe.csv)). Then it was graphed in R ([script](Phenology/phenology_script.R)). Results can be found in the folder [Phenology](Phenology).
