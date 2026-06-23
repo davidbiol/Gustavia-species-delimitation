@@ -113,17 +113,17 @@ plot(st_geometry(country_map), extent = EOO.datos$spatial)
 plot(EOO.datos$spatial, lwd = 2, col = "red",  add= TRUE)
 print(EOO.datos)
 #EEO 14779.8 km2
-
+```
 The EEO estimated for the species was **14779.8 km2**.
 
-### Area of Occupancy (AOO)
 ```
+### Area of Occupancy (AOO)
 AOO.datos <- AOO.computing(XY = datos, cell_size_AOO = 2, nbe.rep.rast.AOO = 100, show_progress = FALSE)
 print(AOO.datos)
 #AOO 84 km2
 ```
 The AOO estimated for the species was **84 km2**.
-
+```
 radius <- subpop.radius(XY = datos, quant.max = 0.9)
 radius
 sub <- subpop.comp(XY = datos,
