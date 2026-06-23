@@ -25,11 +25,11 @@ Complete [script](Morphometric%20analysis/morphometric_analysis.R) and [results]
 
 ## Climatic niche similarity analyses
 
-Environmental niche comparisons among the four species (*G.fasciculata*, *G. poeppigiana*, *G. gentryi*, and *G. gracillima*) were conducted using the PCA-env approach and the niche similarity analyses implemented in the [ecospat R package](Climatic-niche-similarity-analyses/Niche-smilarity-analyses.R) (Broennimann et al., 2012; Di Cola et al., 2017). The niche similarity hypothesis was evaluated to determine whether observed niche overlap between species was higher than expected by chance. The level of climatic niche similarity between pairs of species  was assessed using the Shoener’s D index (Schoener, 1970) and the modified Hellinger distance I (Warren et al., 2008).
+Environmental niche comparisons among the four species (*G.fasciculata*, *G. poeppigiana*, *G. gentryi*, and *G. gracillima*) were conducted using the PCA-env approach and the niche similarity analyses implemented in the [ecospat R package](Climatic%20niche%20similarity%20analyses/Niche%20smilarity%20analyses.R) (Broennimann et al., 2012; Di Cola et al., 2017). The niche similarity hypothesis was evaluated to determine whether observed niche overlap between species was higher than expected by chance. The level of climatic niche similarity between pairs of species  was assessed using the Shoener’s D index (Schoener, 1970) and the modified Hellinger distance I (Warren et al., 2008).
 
 To determine whether observed niche overlap differed from null expectations, we conducted niche similarity tests following the PCA-env framework of Broennimann et al. (2012). In these analyses, the niche of one species was held constant, whereas occurrence records of the second species were randomly redistributed within its accessible environmental background to generate a null distribution of niche overlap values.
 
-Climatic data, ocurrence records for each species can be found in the folder [Climatic niche similarity analyses](Climatic%20niche%20similarity%20analyses) and the analysis [script](Climatic_niche_similarity_analyses/Niche_similarity_analyses.R)
+Climatic data, ocurrence records for each species can be found in the folder [Climatic niche similarity analyses](Climatic%20niche%20similarity%20analyses) and the analysis [script](Climatic%20niche%20similarity%20analyses/Niche%20similarity%20analyses.R)
 
 ## Ecological Niche Modeling (ENM)
 To construct the Ecological Niche Model (ENM), occurrence records for the species and 19 bioclimatic variables available from the [Worldclim](https://www.worldclim.org/data/worldclim21.html) database were used. Occurrence records were filtered to retain only one record per square kilometer and then partitioned into [joint](ENM/gustavia_joint.csv), [train](ENM/gustavia_train.csv), and [test](ENM/gustavia_test.csv) dataset. The bioclimatic variables were refined through a correlation analysis. The accessible area (M) was delineated by intersecting species occurrence records with the ecoregions (Dinerstein et al. 2017) covering the Middle and Low Magdalena Valley [(M_variables)](ENM/M_variables/Set_1). 
@@ -109,7 +109,7 @@ ggplot(data, aes(x = Month, y = Records, fill = Phenology)) +
 ## Preliminary IUCN Red List assessment
 
 The preliminary IUCN Red List assessment of the Extent of occurrence (EOO) and area of occupancy (AOO) was estimated based on the geographical data from the specimens, using the ConR v.2.1 R package ([Dauby and de Lima 2024](https://github.com/gdauby/ConR)). We used the Convex Hull method to compute EOO, setting 2 × 2 km grid cells. This grid was randomly overlaid 100 times to calculate AOO. The IUCN Red List category for the species was assessed following the guidelines of the International Union for Conservation of Nature v.16 (IUCN 2024). 
-The code for this analysis can be found in [IUCN-Assessment/analysis-iucn.R](IUCN_Assessment/analysis_iucn.R)
+The code for this analysis can be found in [IUCN-Assessment/analysis-iucn.R](IUCN%20Assessment/analysis%20iucn.R)
 ### Extent of Occurrence (EOO)
 ```
 EOO.datos <- EOO.computing(XY = datos, method.range = "convex.hull", export_shp = TRUE, show_progress = FALSE)
