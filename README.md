@@ -29,7 +29,7 @@ Environmental niche comparisons among the four species (*G.fasciculata*, *G. poe
 
 To determine whether observed niche overlap differed from null expectations, we conducted niche similarity tests following the PCA-env framework of Broennimann et al. (2012). In these analyses, the niche of one species was held constant, whereas occurrence records of the second species were randomly redistributed within its accessible environmental background to generate a null distribution of niche overlap values.
 
-Climatic data, ocurrence records for each species can be found in the folder [Climatic niche similarity analyses](Climatic-niche-similarity-analyses) and the analysis [script](Climatic_niche_similarity_analyses/Niche_similarity_analyses.R)
+Climatic data, ocurrence records for each species can be found in the folder [Climatic niche similarity analyses](Climatic%20niche%20similarity%20analyses) and the analysis [script](Climatic_niche_similarity_analyses/Niche_similarity_analyses.R)
 
 ## Ecological Niche Modeling (ENM)
 To construct the Ecological Niche Model (ENM), occurrence records for the species and 19 bioclimatic variables available from the [Worldclim](https://www.worldclim.org/data/worldclim21.html) database were used. Occurrence records were filtered to retain only one record per square kilometer and then partitioned into [joint](ENM/gustavia_joint.csv), [train](ENM/gustavia_train.csv), and [test](ENM/gustavia_test.csv) dataset. The bioclimatic variables were refined through a correlation analysis. The accessible area (M) was delineated by intersecting species occurrence records with the ecoregions (Dinerstein et al. 2017) covering the Middle and Low Magdalena Valley [(M_variables)](ENM/M_variables/Set_1). 
