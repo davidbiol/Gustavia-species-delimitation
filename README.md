@@ -104,7 +104,7 @@ ggplot(data, aes(x = Month, y = Records, fill = Phenology)) +
 ## Preliminary IUCN Red List assessment
 
 The preliminary IUCN Red List assessment of the Extent of occurrence (EOO) and area of occupancy (AOO) was estimated based on the geographical data from the specimens, using the ConR v.2.1 R package ([Dauby and de Lima 2024](https://github.com/gdauby/ConR)). We used the Convex Hull method to compute EOO, setting 2 × 2 km grid cells. This grid was randomly overlaid 100 times to calculate AOO. The IUCN Red List category for the species was assessed following the guidelines of the International Union for Conservation of Nature v.16 (IUCN 2024). 
-The code for this analysis can be found in [IUCN-Assessment/analysis_iucn](IUCN-Assessment/analysis_iucn)
+The code for this analysis can be found in [IUCN-Assessment/analysis_iucn.R](IUCN-Assessment/analysis_iucn.R)
 ### Extent of Occurrence (EOO)
 ```
 EOO.datos <- EOO.computing(XY = datos, method.range = "convex.hull", export_shp = TRUE, show_progress = FALSE)
