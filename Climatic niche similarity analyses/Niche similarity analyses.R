@@ -84,7 +84,7 @@ a.dyn<-ecospat.niche.equivalency.test(z1=z1 , z2=z2, rep=1000)
 ecospat.plot.overlap.test(a.dyn,"D","Equivalencia")
 
 
-b1.dyn<-ecospat.niche.similarity.test(z1=z2 , z2=z1, overlap.alternative = "higher", rep=100, rand.type=2)#solo z2 se aleatoriza, z1 queda fijo
+b1.dyn<-ecospat.niche.similarity.test(z1=z2 , z2=z1, overlap.alternative = "higher", rep=100, rand.type=2)
 b2.dyn<-ecospat.niche.similarity.test(z2=z1 , z1=z2, overlap.alternative = "higher",rep=100, rand.type=2)
 
 
