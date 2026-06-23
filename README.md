@@ -24,7 +24,9 @@ Complete [script](Morphometric%20analysis/morphometric_analysis.R) and [results]
 
 
 ## Climatic niche similarity analyses
-start
+
+Environmental niche comparisons among the four species ([G. fasciculata](ENM/gustavia_joint.csv), G. poeppigiana, G. gentryi, and G. gracillima) were conducted using the PCA-env approach and the niche similarity analyses implemented in the ecospat R package (Broennimann et al., 2012; Di Cola et al., 2017). The niche similarity hypothesis was evaluated to determine whether observed niche overlap between species was higher than expected by chance. The level of climatic niche similarity between pairs of species (G. fasciculata vs. G. poeppigiana or G. gentryi or G. gracillima), was assessed using the Shoener’s D index (Schoener, 1970) and the modified Hellinger distance I (Warren et al., 2008).
+
 
 ## Ecological Niche Modeling (ENM)
 To construct the Ecological Niche Model (ENM), occurrence records for the species and 19 bioclimatic variables available from the [Worldclim](https://www.worldclim.org/data/worldclim21.html) database were used. Occurrence records were filtered to retain only one record per square kilometer and then partitioned into [joint](ENM/gustavia_joint.csv), [train](ENM/gustavia_train.csv), and [test](ENM/gustavia_test.csv) dataset. The bioclimatic variables were refined through a correlation analysis. The accessible area (M) was delineated by intersecting species occurrence records with the ecoregions (Dinerstein et al. 2017) covering the Middle and Low Magdalena Valley [(M_variables)](ENM/M_variables/Set_1). 
