@@ -27,7 +27,11 @@ Complete [script](Morphometric%20analysis/morphometric_analysis.R) and [results]
 start
 
 ## Ecological Niche Modeling (ENM)
-start
+To construct the Ecological Niche Model (ENM), occurrence records for the species and 19 bioclimatic variables available from the [Worldclim](https://www.worldclim.org/data/worldclim21.html) database were used. Occurrence records were filtered to retain only one record per square kilometer and then partitioned into [joint](ENM/gustavia_joint.csv), [train](ENM/gustavia_train.csv), and [test](ENM/gustavia_test.csv) dataset. The bioclimatic variables were refined through a correlation analysis. The accessible area (M) was delineated by intersecting species occurrence records with the ecoregions (Dinerstein et al. 2017) covering the Middle and Low Magdalena Valley [(M_variables)](ENM/M_variables/Set_1). 
+
+The ENM was built using the maximum entropy algorithm (Maxent) via the KUENM package (Cobos et al. 2019). The model was generated using a unique [set](ENM/M_variables/Set_1) of bioclimatic variables and the partitioned ocurrences records, and was calibrated with 15 regularization multipliers (0.1–1 at intervals of 0.1, and 2–6 at intervals of 1) and seven combinations of feature classes (l = linear, q = quadratic, and p = product features).All analyses were conducted using the software [R](https://www.r-project.org/) (R Core Team, 2024). 
+
+
 
 ## Phylogenetic tree pruning
 We pruned the Maximum Likelihood phylogenetic tree inferred by [Medellín-Zabala et al. (2026)](https://doi.org/10.1111/jbi.70225) to visualize the subclade that ecompasses <i>Gustavia fasciculata</i> sp. nov. and its closely related taxa.
