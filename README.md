@@ -25,7 +25,7 @@ Complete [script](Morphometric%20analysis/morphometric_analysis.R) and [results]
 
 ## Climatic niche similarity analyses
 
-Environmental niche comparisons among the four species ([G. fasciculata](ENM/gustavia_joint.csv), G. poeppigiana, G. gentryi, and G. gracillima) were conducted using the PCA-env approach and the niche similarity analyses implemented in the ecospat R package (Broennimann et al., 2012; Di Cola et al., 2017). The niche similarity hypothesis was evaluated to determine whether observed niche overlap between species was higher than expected by chance. The level of climatic niche similarity between pairs of species (G. fasciculata vs. G. poeppigiana or G. gentryi or G. gracillima), was assessed using the Shoener’s D index (Schoener, 1970) and the modified Hellinger distance I (Warren et al., 2008).
+Environmental niche comparisons among the four species [G. fasciculata](Climatic niche similarity analyses/G.fasciculata.csv), G. poeppigiana, G. gentryi, and G. gracillima) were conducted using the PCA-env approach and the niche similarity analyses implemented in the ecospat R package (Broennimann et al., 2012; Di Cola et al., 2017). The niche similarity hypothesis was evaluated to determine whether observed niche overlap between species was higher than expected by chance. The level of climatic niche similarity between pairs of species (G. fasciculata vs. G. poeppigiana or G. gentryi or G. gracillima), was assessed using the Shoener’s D index (Schoener, 1970) and the modified Hellinger distance I (Warren et al., 2008).
 
 
 ## Ecological Niche Modeling (ENM)
