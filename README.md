@@ -25,11 +25,11 @@ Complete [script](Morphometric%20analysis/morphometric_analysis.R) and [results]
 
 ## Climatic niche similarity analyses
 
-Environmental niche comparisons among the four species (G.fasciculata, G. poeppigiana, G. gentryi, and G. gracillima) were conducted using the PCA-env approach and the niche similarity analyses implemented in the [ecospat R package](Climatic-niche-similarity-analyses/Niche-smilarity-analyses.R) (Broennimann et al., 2012; Di Cola et al., 2017). The niche similarity hypothesis was evaluated to determine whether observed niche overlap between species was higher than expected by chance. The level of climatic niche similarity between pairs of species  was assessed using the Shoener’s D index (Schoener, 1970) and the modified Hellinger distance I (Warren et al., 2008).
+Environmental niche comparisons among the four species (*G.fasciculata*, *G. poeppigiana*, *G. gentryi*, and *G. gracillima*) were conducted using the PCA-env approach and the niche similarity analyses implemented in the [ecospat R package](Climatic-niche-similarity-analyses/Niche-smilarity-analyses.R) (Broennimann et al., 2012; Di Cola et al., 2017). The niche similarity hypothesis was evaluated to determine whether observed niche overlap between species was higher than expected by chance. The level of climatic niche similarity between pairs of species  was assessed using the Shoener’s D index (Schoener, 1970) and the modified Hellinger distance I (Warren et al., 2008).
 
 To determine whether observed niche overlap differed from null expectations, we conducted niche similarity tests following the PCA-env framework of Broennimann et al. (2012). In these analyses, the niche of one species was held constant, whereas occurrence records of the second species were randomly redistributed within its accessible environmental background to generate a null distribution of niche overlap values.
 
-Climatic data, ocurrence records for each species can be found in the folder [Climatic niche similarity analyses](Climatic-niche-similarity-analyses) and the analysis script [script](Climatic-niche-similarity-analyses/Niche-smilarity-analyses.R)
+Climatic data, ocurrence records for each species can be found in the folder [Climatic niche similarity analyses](Climatic-niche-similarity-analyses) and the analysis [script](Climatic-niche-similarity-analyses/Niche-smilarity-analyses.R)
 
 ## Ecological Niche Modeling (ENM)
 To construct the Ecological Niche Model (ENM), occurrence records for the species and 19 bioclimatic variables available from the [Worldclim](https://www.worldclim.org/data/worldclim21.html) database were used. Occurrence records were filtered to retain only one record per square kilometer and then partitioned into [joint](ENM/gustavia_joint.csv), [train](ENM/gustavia_train.csv), and [test](ENM/gustavia_test.csv) dataset. The bioclimatic variables were refined through a correlation analysis. The accessible area (M) was delineated by intersecting species occurrence records with the ecoregions (Dinerstein et al. 2017) covering the Middle and Low Magdalena Valley [(M_variables)](ENM/M_variables/Set_1). 
@@ -184,7 +184,11 @@ Finally, the data obtained from EOO, AOO, number of subpopulations, number of lo
 
 Cobos, M. E., Peterson, A. T., Barve, N., & Osorio-Olvera, L. (2019). kuenm: an R package for detailed development of ecological niche models using Maxent. PeerJ, 7, e6281. https://doi.org/10.7717/peerj.6281
 
+Broennimann, O., Fitzpatrick, M. C., Pearman, P. B., Petitpierre, B., Pellissier, L., Yoccoz, N. G., ... & Guisan, A. (2012). Measuring ecological niche overlap from occurrence and spatial environmental data. Global ecology and biogeography, 21(4), 481-497.
+
 Dauby, G., & de Lima, R. A. F. (2024). ConR: Computation of Parameters Used in Preliminary Assessment of Species Conservation Status. R package (version 2.1.0).
+
+Di Cola, V., Broennimann, O., Petitpierre, B., Breiner, F. T., d'Amen, M., Randin, C., ... & Guisan, A. (2017). ecospat: an R package to support spatial analyses and modeling of species niches and distributions. Ecography, 40(6), 774-787.
 
 Maechler, M., Rousseeuw, P., Struyf, A., Hubert, M., & Hornik, K. (2023).  _cluster: Cluster Analysis Basics and Extensions_. R package version 2.1.6.
 
@@ -195,3 +199,7 @@ Medellín-Zabala, D., J. L. M. Charboneau, O. M. Vargas, S. A. Smith, D. J. P. G
 Oksanen J, Simpson G, Blanchet F, Kindt R, Legendre P, Minchin P, O'Hara R, Solymos P, Stevens M, Szoecs E, Wagner H, Barbour M, Bedward M, Bolker B, Borcard D, Borman T, Carvalho G, Chirico M, De Caceres M, Durand S, Evangelista H, FitzJohn R, Friendly M, Furneaux B, Hannigan G, Hill M, Lahti L, Martino C, McGlinn D, Ouellette M, Ribeiro Cunha E, Smith T, Stier A, Ter Braak C, & Weedon J. (2026). _vegan: Community Ecology Package_. R package version 2.7-3, <https://CRAN.R-project.org/package=vegan>.
 
 R Core Team (2024). R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
+
+Schoener, T. W. (1970). Nonsynchronous spatial overlap of lizards in patchy habitats. Ecology, 51(3), 408-418.
+
+Warren, D. L., Glor, R. E., & Turelli, M. (2008). Environmental niche equivalency versus conservatism: quantitative approaches to niche evolution. Evolution, 62(11), 2868-2883.
