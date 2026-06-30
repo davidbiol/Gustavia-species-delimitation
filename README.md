@@ -3,7 +3,7 @@
 [![Journal](https://img.shields.io/badge/Journal-Botanical%20Journal%20of%20the%20Linnean%20Society-209e4d)](https://bsapubs.onlinelibrary.wiley.com/journal/15372197)
 [![Status](https://img.shields.io/badge/Status-Draft%20again-orange)]()
 
-Supplementary data for: Ángel-Vallejo, MC, Mora-López, JD, Gutiérrez-Duque D, Jara-Muñoz, OA, Medellín-Zabala D (in review). Species delimitation in <i>Gustavia</i> (Lecythidaceae): an integrative taxonomic approach. American Journal of Botany.
+Supplementary data for: Ángel-Vallejo, MC, Mora-López, JD, Gutiérrez-Duque D, Jara-Muñoz, OA, Medellín-Zabala D (in review). Species delimitation in <i>Gustavia</i> (Lecythidaceae): an integrative taxonomic approach. Botanical Journal of the Linnean Society.
 
 ---
 This repository has been created with the aim of reproducibility of the analyses done. Also, it provides the required tools for any integrative study that aims to circumscribe species in Neotropical Lecythidaceae, particularly in the genus _Gustavia_. Various tools are presented for [morphometric analysis](Morphometric%20analysis), [Climatic niche similarity analyses], [Ecological Niche Modeling], [phenology visualization](Phenology), and [Preliminary IUCN Red List assessment]. Additionally, we include a script for phylogenetic tree pruning.
