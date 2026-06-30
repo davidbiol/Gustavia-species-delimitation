@@ -1,7 +1,7 @@
 # Species delimitation in <i>Gustavia</i> (Lecythidaceae): an integrative taxonomic approach
 
-[![Journal](https://img.shields.io/badge/Journal-American%20Journal%20of%20Botany-2b592c)](https://bsapubs.onlinelibrary.wiley.com/journal/15372197)
-[![Status](https://img.shields.io/badge/Status-In%20review-orange)]()
+[![Journal](https://img.shields.io/badge/Journal-Botanical%20Journal%20of%20the%20Linnean%20Society-209e4d)](https://bsapubs.onlinelibrary.wiley.com/journal/15372197)
+[![Status](https://img.shields.io/badge/Status-Draft%20again-orange)]()
 
 Supplementary data for: Ángel-Vallejo, MC, Mora-López, JD, Gutiérrez-Duque D, Jara-Muñoz, OA, Medellín-Zabala D (in review). Species delimitation in <i>Gustavia</i> (Lecythidaceae): an integrative taxonomic approach. American Journal of Botany.
 
